@@ -1,10 +1,5 @@
 <script>
-export default {
-    mounted() {
-        // Inizializzazione del carosello
-        new bootstrap.Carousel(document.getElementById('carouselExample'));
-    }
-}
+
 </script>
 
 <template>

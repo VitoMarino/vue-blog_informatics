@@ -9,6 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue": "^2.23.1",
+    "font-awesome": "^4.7.0",
+    "popper": "^1.0.1",
+    "sass": "^1.79.4",
+    "scss": "^0.2.4",
     "vue": "^3.4.37"
   },
   "devDependencies": {

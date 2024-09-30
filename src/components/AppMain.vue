@@ -1,11 +1,18 @@
 <script>
+import JumboSection from './JumboSection.vue';
 
+export default {
+    components: {
+        JumboSection,
+    }
+}
 </script>
 
 <template>
+<JumboSection/>
 
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 
 </style>

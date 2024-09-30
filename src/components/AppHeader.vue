@@ -81,11 +81,9 @@ export default {
         </div>
     </nav>
 
-    <img src="../img/logo2.jpg" alt="">
-
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 *{
     font-size: 1rem;
 }

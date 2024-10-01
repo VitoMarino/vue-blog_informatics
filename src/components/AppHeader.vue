@@ -5,7 +5,7 @@ export default {
             navLinks: [
                 {
                     label: 'Home',
-                    name: 'Home'
+                    name: 'Homepage'
                 },
                 {
                     label: 'Smartphone',
@@ -54,9 +54,9 @@ export default {
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li v-for="navLink in navLinks" class="nav-item">
-                        <a class="nav-link active my_color-nav" aria-current="page" href="#">
+                        <router-link :to="{name: navLink.name}" class="nav-link active my_color-nav" aria-current="page" href="#">
                             {{ navLink.label }}
-                        </a>
+                        </router-link>
                     </li>
                     <li v-for="otherLink in otherLinks" class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle my_color-nav" href="#" role="button" data-bs-toggle="dropdown"

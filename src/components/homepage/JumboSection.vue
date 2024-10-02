@@ -3,39 +3,47 @@
 </script>
 
 <template>
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!--Modifica articoli in evidenza-->
         <div class="carousel-inner">
-            <h3>
-                Articoli in evidenza
-            </h3>
-            <hr>
-            <div class="carousel-item active my_text-img">
-                <img src="../img/inEvidenza/iphone16.jpg" class="d-block w-100" alt="Iphone 16 e 16 pro">
+            <div class="carousel-item active caption">
+                <img src="../../img/inEvidenza/iphone16.jpg" class="d-block w-100" alt="...">
                 <span>
                     <strong>Iphone 16 & 16 pro</strong>
-                    Leggi l'ultimo articolo sulle caratteristiche dell'iphone 16 e 16 pro.
+                    Leggi l'ultima recensione del nuovo Iphone 16 & 16 pro
                 </span>
             </div>
-            <div class="carousel-item my_text-img">
-                <img src="../img/inEvidenza/surface.jpg" class="d-block w-100" alt="Surface Pro">
-                <span>
-                    <strong>Surface Pro</strong>
-                    Leggi l'ultimo articolo sul Surface Pro 11ª generazione.
-                </span>
-            </div>
-            <div class="carousel-item my_text-img">
-                <img src="../img/inEvidenza/S24-ultra.jpg" class="d-block w-100" alt="Samsung S24 Ultra">
+            <div class="carousel-item caption">
+                <img src="../../img/inEvidenza/S24-ultra.jpg" class="d-block w-100" alt="...">
                 <span>
                     <strong>Samsung S24 Ultra</strong>
-                    Leggi l'ultimo articolo sul Samsung Galaxy S24 Ultra.
+                    Leggi l'ultima recensione del Samsung Galaxy S24 Ultra
+                </span>
+            </div>
+            <div class="carousel-item caption">
+                <img src="../../img/inEvidenza/surface.jpg" class="d-block w-100" alt="...">
+                <span>
+                    <strong>Surface</strong>
+                    Leggi l'ultima recensione dell'ultimo Microsfot Sufrace
                 </span>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <!---------------------------------->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -43,11 +51,7 @@
 </template>
 
 <style lang="scss" scoped>
-h3 {
-    font-family: Verdana, sans-serif;
-}
-
-.my_text-img {
+.caption {
     font-family: Verdana, sans-serif;
     font-size: 10px;
     float: left;
@@ -57,7 +61,7 @@ h3 {
     overflow: hidden;
 }
 
-.my_text-img img {
+.caption img {
     float: left;
     margin: 0;
     padding: 0;
@@ -65,7 +69,7 @@ h3 {
     border: none;
 }
 
-.my_text-img span {
+.caption span {
     float: left;
     margin: 0;
     padding: 10px;
@@ -79,7 +83,7 @@ h3 {
     bottom: 0;
 }
 
-.my_text-img span strong {
+.caption span strong {
     font-weight: bold;
     font-size: 11px;
     text-transform: uppercase;
